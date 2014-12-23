@@ -13,6 +13,10 @@ abstract class View
     function generate ($data)
     {
         extract($data);
-        require_once "{$_SERVER['DOCUMENT_ROOT']}/templates/$this->_template";
+        $filename = sprintf("../templates/%s.php", $this->_template);
+        if(!is_readable($filename)){
+            throw new DomainException(sprintf("%s does not exists", $filename));
+        }
+        require_once $filename;
     }
 }
