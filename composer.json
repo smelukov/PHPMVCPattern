@@ -1,0 +1,24 @@
+{
+  "name": "MyPHPMVCPattern",
+  "homepage": "https://github.com/smelukov/PHPMVCPattern",
+
+  "require": {
+    "php": ">=5.4.0"
+  },
+
+  "suggest": {
+    "php": ">=5.6.3"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "MVC\\": "mvc/",
+      "App\\": "app/",
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+  },
+
+  "minimum-stability": "stable"
+}
