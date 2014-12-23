@@ -12,7 +12,7 @@
 
   "autoload": {
     "psr-4": {
-      "MVC\\": "src/"
+      "MVC\\": "app/"
     }
   },
   "require-dev": {
