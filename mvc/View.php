@@ -13,7 +13,7 @@ abstract class View
     function generate ($data)
     {
         extract($data);
-        $filename = sprintf("../templates/%s.php", $this->_template);
+        $filename = sprintf(__DIR__"/../templates/%s.php", $this->_template);
         if(!is_readable($filename)){
             throw new DomainException(sprintf("%s does not exists", $filename));
         }
